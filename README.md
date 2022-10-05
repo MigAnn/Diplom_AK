@@ -2,9 +2,9 @@
 
 ## Документация
 
-* [План выполнения работ]()
-* [Отчет о проведенном тестировании]()
-* [Отчет о проведенной автоматизации]()
+* [План выполнения работ](https://github.com/MigAnn/Diplom_AK/blob/main/Documents/Plan.md)
+* [Отчет о проведенном тестировании](https://github.com/MigAnn/Diplom_AK/blob/main/Documents/Report.md)
+* [Отчет о проведенной автоматизации](https://github.com/MigAnn/Diplom_AK/blob/main/Documents/Summary.md)
 
 
 ## О проекте
