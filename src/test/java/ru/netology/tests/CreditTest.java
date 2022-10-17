@@ -39,8 +39,7 @@ public class CreditTest {
     void shouldBuyInCredit() throws SQLException {
         CardInfo card = new CardInfo(getApprovedNumber(), getCurrentMonth(), getNextYear(), getValidName(), getValidCvc());
         val firstPage = new FirstPage();
-        firstPage.buyInCredit();
-        val credit = new Credit();
+        val credit = firstPage.buyInCredit();
         credit.fulfillData(card);
         credit.checkSuccessNotification();
         assertEquals("APPROVED", DbUtils.getCreditStatus());
@@ -50,8 +49,8 @@ public class CreditTest {
     void shouldBuyInCreditWithNameInRussianLetters() throws SQLException {
         CardInfo card = new CardInfo(getApprovedNumber(), getCurrentMonth(), getNextYear(), getInValidName(), getValidCvc());
         val firstPage = new FirstPage();
-        firstPage.buyInCredit();
-        val credit = new Credit();
+        val credit = firstPage.buyInCredit();
+
         credit.fulfillData(card);
         credit.checkSuccessNotification();
         assertEquals("APPROVED", DbUtils.getCreditStatus());
@@ -62,8 +61,8 @@ public class CreditTest {
     void shouldNotBuyInCreditWithDeclinedCardNumber() throws SQLException {
         CardInfo card = new CardInfo(getDeclinedNumber(), getCurrentMonth(), getNextYear(), getValidName(), getValidCvc());
         val firstPage = new FirstPage();
-        firstPage.buyInCredit();
-        val credit = new Credit();
+        val credit = firstPage.buyInCredit();
+
         credit.fulfillData(card);
         credit.checkDeclineNotification();
 
@@ -74,8 +73,8 @@ public class CreditTest {
     void shouldNotBuyInCreditWithInvalidCardNumber() throws SQLException {
         CardInfo card = new CardInfo(getInvalidCardNumber(), getCurrentMonth(), getNextYear(), getValidName(), getValidCvc());
         val firstPage = new FirstPage();
-        firstPage.buyInCredit();
-        val credit = new Credit();
+        val credit = firstPage.buyInCredit();
+
         credit.fulfillData(card);
         credit.checkDeclineNotification();
 
@@ -86,8 +85,8 @@ public class CreditTest {
     void shouldNotBuyInCreditWithShortCardNumber() {
         CardInfo card = new CardInfo(getShortCardNumber(), getCurrentMonth(), getNextYear(), getValidName(), getValidCvc());
         val firstPage = new FirstPage();
-        firstPage.buyInCredit();
-        val credit = new Credit();
+        val credit = firstPage.buyInCredit();
+
         credit.fulfillData(card);
         credit.checkInvalidFormat();
     }
@@ -98,8 +97,8 @@ public class CreditTest {
     void shouldNotBuyInCreditWithEmptyCardNumber() {
         CardInfo card = new CardInfo(null, getCurrentMonth(), getNextYear(), getValidName(), getValidCvc());
         val firstPage = new FirstPage();
-        firstPage.buyInCredit();
-        val credit = new Credit();
+        val credit = firstPage.buyInCredit();
+
         credit.fulfillData(card);
         credit.checkRequiredField();
     }
@@ -111,8 +110,8 @@ public class CreditTest {
     void shouldNotBuyInCreditWithInvalidMonth() {
         CardInfo card = new CardInfo(getApprovedNumber(), "00", getNextYear(), getValidName(), getValidCvc());
         val firstPage = new FirstPage();
-        firstPage.buyInCredit();
-        val credit = new Credit();
+        val credit = firstPage.buyInCredit();
+
         credit.fulfillData(card);
         credit.checkInvalidDate();
     }
@@ -122,8 +121,8 @@ public class CreditTest {
     void shouldNotBuyInCreditWithNonExistingMonth() {
         CardInfo card = new CardInfo(getApprovedNumber(), "13", getNextYear(), getValidName(), getValidCvc());
         val firstPage = new FirstPage();
-        firstPage.buyInCredit();
-        val credit = new Credit();
+        val credit = firstPage.buyInCredit();
+
         credit.fulfillData(card);
         credit.checkInvalidDate();
 
@@ -135,8 +134,8 @@ public class CreditTest {
     void shouldNotBuyInCreditWithExpiredMonth() {
         CardInfo card = new CardInfo(getApprovedNumber(), getLastMonth(), getCurrentYear(), getValidName(), getValidCvc());
         val firstPage = new FirstPage();
-        firstPage.buyInCredit();
-        val credit = new Credit();
+        val credit = firstPage.buyInCredit();
+
         credit.fulfillData(card);
         credit.checkExpiredDate();
     }
@@ -147,8 +146,8 @@ public class CreditTest {
     void shouldNotBuyInCreditWithEmptyMonth() {
         CardInfo card = new CardInfo(getApprovedNumber(), null, getNextYear(), getValidName(), getValidCvc());
         val firstPage = new FirstPage();
-        firstPage.buyInCredit();
-        val credit = new Credit();
+        val credit = firstPage.buyInCredit();
+
         credit.fulfillData(card);
         credit.checkRequiredField();
     }
@@ -159,8 +158,8 @@ public class CreditTest {
     void shouldNotBuyInCreditGateWithExpiredYear() {
         CardInfo card = new CardInfo(getApprovedNumber(), getCurrentMonth(), getLastYear(), getValidName(), getValidCvc());
         val firstPage = new FirstPage();
-        firstPage.buyInCredit();
-        val credit = new Credit();
+        val credit = firstPage.buyInCredit();
+
         credit.fulfillData(card);
         credit.checkExpiredDate();
     }
@@ -171,8 +170,8 @@ public class CreditTest {
     void shouldNotBuyInCreditWithEmptyYear() {
         CardInfo card = new CardInfo(getApprovedNumber(), getCurrentMonth(), null, getValidName(), getValidCvc());
         val firstPage = new FirstPage();
-        firstPage.buyInCredit();
-        val credit = new Credit();
+        val credit = firstPage.buyInCredit();
+
         credit.fulfillData(card);
         credit.checkRequiredField();
     }
@@ -184,8 +183,8 @@ public class CreditTest {
     void shouldNotBuyInCreditWithOnlySurname() {
         CardInfo card = new CardInfo(getApprovedNumber(), getCurrentMonth(), getNextYear(), getOnlySurname(), getValidCvc());
         val firstPage = new FirstPage();
-        firstPage.buyInCredit();
-        val credit = new Credit();
+        val credit = firstPage.buyInCredit();
+
         credit.fulfillData(card);
         credit.checkInvalidName();
     }
@@ -195,8 +194,8 @@ public class CreditTest {
     void shouldNotBuyInCreditWithNameAndSurnameWithDash() {
         CardInfo card = new CardInfo(getApprovedNumber(), getCurrentMonth(), getNextYear(), "Иван-Иванов", getValidCvc());
         val firstPage = new FirstPage();
-        firstPage.buyInCredit();
-        val credit = new Credit();
+        val credit = firstPage.buyInCredit();
+
         credit.fulfillData(card);
         credit.checkInvalidFormat();
     }
@@ -207,8 +206,8 @@ public class CreditTest {
     void shouldNotBuyInCreditWithDigitsInName() {
         CardInfo card = new CardInfo(getApprovedNumber(), getCurrentMonth(), getNextYear(), getNameWithNumbers(), getValidCvc());
         val firstPage = new FirstPage();
-        firstPage.buyInCredit();
-        val credit = new Credit();
+        val credit = firstPage.buyInCredit();
+
         credit.fulfillData(card);
         credit.checkInvalidDataName();
     }
@@ -219,8 +218,8 @@ public class CreditTest {
     void shouldNotBuyInCreditWithEmptyName() {
         CardInfo card = new CardInfo(getApprovedNumber(), getCurrentMonth(), getNextYear(), null, getValidCvc());
         val firstPage = new FirstPage();
-        firstPage.buyInCredit();
-        val credit = new Credit();
+        val credit = firstPage.buyInCredit();
+
         credit.fulfillData(card);
         credit.checkRequiredField();
     }
@@ -231,8 +230,8 @@ public class CreditTest {
     void shouldNotBuyInCreditWithSpaceInsteadOfName() {
         CardInfo card = new CardInfo(getApprovedNumber(), getCurrentMonth(), getNextYear(), " ", getValidCvc());
         val firstPage = new FirstPage();
-        firstPage.buyInCredit();
-        val credit = new Credit();
+        val credit = firstPage.buyInCredit();
+
         credit.fulfillData(card);
         credit.checkInvalidDataName();
     }
@@ -243,8 +242,8 @@ public class CreditTest {
     void shouldNotBuyInCreditWithOneDigitInCvc() {
         CardInfo card = new CardInfo(getApprovedNumber(), getCurrentMonth(), getNextYear(), getValidName(), getCvcWithOneDigit());
         val firstPage = new FirstPage();
-        firstPage.buyInCredit();
-        val credit = new Credit();
+        val credit = firstPage.buyInCredit();
+
         credit.fulfillData(card);
         credit.checkInvalidCvc();
     }
@@ -254,8 +253,8 @@ public class CreditTest {
     void shouldNotBuyInCreditWithTwoDigitsInCvc() {
         CardInfo card = new CardInfo(getApprovedNumber(), getCurrentMonth(), getNextYear(), getValidName(), getCvcWithTwoDigits());
         val firstPage = new FirstPage();
-        firstPage.buyInCredit();
-        val credit = new Credit();
+        val credit = firstPage.buyInCredit();
+
         credit.fulfillData(card);
         credit.checkInvalidCvc(); //TODO Изменить надпись под полем CVC "Значение поля должно содержать 3 цифры"
     }
@@ -266,8 +265,8 @@ public class CreditTest {
     void shouldNotBuyInCreditWithEmptyCvc() {
         CardInfo card = new CardInfo(getApprovedNumber(), getCurrentMonth(), getNextYear(), getValidName(), null);
         val firstPage = new FirstPage();
-        firstPage.buyInCredit();
-        val credit = new Credit();
+        val credit = firstPage.buyInCredit();
+
         credit.fulfillData(card);
         credit.checkRequiredField();
     }
@@ -278,8 +277,8 @@ public class CreditTest {
     void shouldNotBuyInCreditWithAllEmptyFields() {
         CardInfo card = new CardInfo(null, null, null, null, null);
         val firstPage = new FirstPage();
-        firstPage.buyInCredit();
-        val credit = new Credit();
+        val credit = firstPage.buyInCredit();
+
         credit.fulfillData(card);
         credit.checkAllFieldsAreRequired();
 

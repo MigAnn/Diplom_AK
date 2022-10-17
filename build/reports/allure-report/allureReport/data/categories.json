@@ -4,16 +4,16 @@
   "children" : [ {
     "name" : "Product defects",
     "children" : [ {
-      "name" : "Element should have exact text 'Истёк срок действия карты' {.input__sub}\nElement: '<span class=\"input__sub\">Неверно указан срок действия карты</span>'\nScreenshot: file:/home/dimnat/Diplom_Anna_Katkova_2022/build/reports/tests/1664990638459.0.png\nPage source: file:/home/dimnat/Diplom_Anna_Katkova_2022/build/reports/tests/1664990638459.0.html\nTimeout: 4 s.",
+      "name" : "Element should have exact text 'Истёк срок действия карты' {.input__sub}\nElement: '<span class=\"input__sub\">Неверно указан срок действия карты</span>'\nScreenshot: file:/home/dimnat/Diplom_Anna_Katkova_2022/build/reports/tests/1666023649741.0.png\nPage source: file:/home/dimnat/Diplom_Anna_Katkova_2022/build/reports/tests/1666023649741.0.html\nTimeout: 4 s.",
       "children" : [ {
         "name" : "shouldNotBuyInCreditWithExpiredMonth()",
-        "uid" : "1d944f42288aa74c",
-        "parentUid" : "b4170cccb30f3ee7663c2916bea5209a",
+        "uid" : "28db3297cc65ad19",
+        "parentUid" : "36dea7baa65974e03a5147b140681754",
         "status" : "failed",
         "time" : {
-          "start" : 1664990618821,
-          "stop" : 1664990639045,
-          "duration" : 20224
+          "start" : 1666023634985,
+          "stop" : 1666023651183,
+          "duration" : 16198
         },
         "flaky" : false,
         "newFailed" : false,
@@ -23,39 +23,18 @@
         "retriesStatusChange" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "b4170cccb30f3ee7663c2916bea5209a"
+      "uid" : "36dea7baa65974e03a5147b140681754"
     }, {
-      "name" : "Element not found {notification_status_error}\nExpected: visible\nScreenshot: file:/home/dimnat/Diplom_Anna_Katkova_2022/build/reports/tests/1664990656920.1.png\nPage source: file:/home/dimnat/Diplom_Anna_Katkova_2022/build/reports/tests/1664990656920.1.html\nTimeout: 15 s.\nCaused by: NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"notification_status_error\"}",
-      "children" : [ {
-        "name" : "shouldNotBuyInCreditWithInvalidCardNumber()",
-        "uid" : "53beab488fdcfa52",
-        "parentUid" : "265798e74c07e2740e9233cfe4d91889",
-        "status" : "failed",
-        "time" : {
-          "start" : 1664990639277,
-          "stop" : 1664990657473,
-          "duration" : 18196
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "265798e74c07e2740e9233cfe4d91889"
-    }, {
-      "name" : "Element should have exact text 'Значение поля должно содержать 3 цифры' {.input__sub}\nElement: '<span class=\"input__sub\">Неверный формат</span>'\nScreenshot: file:/home/dimnat/Diplom_Anna_Katkova_2022/build/reports/tests/1664990673371.2.png\nPage source: file:/home/dimnat/Diplom_Anna_Katkova_2022/build/reports/tests/1664990673371.2.html\nTimeout: 4 s.",
+      "name" : "Element should have exact text 'Значение поля должно содержать 3 цифры' {.input__sub}\nElement: '<span class=\"input__sub\">Неверный формат</span>'\nScreenshot: file:/home/dimnat/Diplom_Anna_Katkova_2022/build/reports/tests/1666023680841.1.png\nPage source: file:/home/dimnat/Diplom_Anna_Katkova_2022/build/reports/tests/1666023680841.1.html\nTimeout: 4 s.",
       "children" : [ {
         "name" : "shouldNotBuyInCreditWithOneDigitInCvc()",
-        "uid" : "bbb4c12fbe56179d",
-        "parentUid" : "63196e9541ad8367b94c955785354982",
+        "uid" : "d265a3b460f52dea",
+        "parentUid" : "6660c92e4ae2b6365c8037b818db7861",
         "status" : "failed",
         "time" : {
-          "start" : 1664990666846,
-          "stop" : 1664990673897,
-          "duration" : 7051
+          "start" : 1666023674048,
+          "stop" : 1666023681239,
+          "duration" : 7191
         },
         "flaky" : false,
         "newFailed" : false,
@@ -65,18 +44,18 @@
         "retriesStatusChange" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "63196e9541ad8367b94c955785354982"
+      "uid" : "6660c92e4ae2b6365c8037b818db7861"
     }, {
-      "name" : "Texts size mismatch\nActual: [Неверный формат, Неверный формат, Неверный формат, Поле обязательно для заполнения, Неверный формат], List size: 5\nExpected: [Поле обязательно для заполнения], List size: 1\nCollection: .input__sub\nScreenshot: file:/home/dimnat/Diplom_Anna_Katkova_2022/build/reports/tests/1664990679715.3.png\nPage source: file:/home/dimnat/Diplom_Anna_Katkova_2022/build/reports/tests/1664990679715.3.html\nTimeout: 4 s.",
+      "name" : "Texts size mismatch\nActual: [Неверный формат, Неверный формат, Неверный формат, Поле обязательно для заполнения, Неверный формат], List size: 5\nExpected: [Поле обязательно для заполнения], List size: 1\nCollection: .input__sub\nScreenshot: file:/home/dimnat/Diplom_Anna_Katkova_2022/build/reports/tests/1666023687252.2.png\nPage source: file:/home/dimnat/Diplom_Anna_Katkova_2022/build/reports/tests/1666023687252.2.html\nTimeout: 4 s.",
       "children" : [ {
         "name" : "shouldNotBuyInCreditWithAllEmptyFields()",
-        "uid" : "83037cae191d7b32",
-        "parentUid" : "d56cd3a11735bc891b937398d33eef1d",
+        "uid" : "79426047886fd4f5",
+        "parentUid" : "0dc1d5fc0738d58c26880510c6bdb7d1",
         "status" : "failed",
         "time" : {
-          "start" : 1664990673908,
-          "stop" : 1664990680311,
-          "duration" : 6403
+          "start" : 1666023681253,
+          "stop" : 1666023687687,
+          "duration" : 6434
         },
         "flaky" : false,
         "newFailed" : false,
@@ -86,18 +65,18 @@
         "retriesStatusChange" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "d56cd3a11735bc891b937398d33eef1d"
+      "uid" : "0dc1d5fc0738d58c26880510c6bdb7d1"
     }, {
-      "name" : "Element should have exact text 'Значение поля может содержать только буквы и дефис' {.input__sub}\nElement: '<span class=\"input__sub\">Поле обязательно для заполнения</span>'\nScreenshot: file:/home/dimnat/Diplom_Anna_Katkova_2022/build/reports/tests/1664990686743.4.png\nPage source: file:/home/dimnat/Diplom_Anna_Katkova_2022/build/reports/tests/1664990686743.4.html\nTimeout: 4 s.",
+      "name" : "Element should have exact text 'Значение поля может содержать только буквы и дефис' {.input__sub}\nElement: '<span class=\"input__sub\">Поле обязательно для заполнения</span>'\nScreenshot: file:/home/dimnat/Diplom_Anna_Katkova_2022/build/reports/tests/1666023694709.3.png\nPage source: file:/home/dimnat/Diplom_Anna_Katkova_2022/build/reports/tests/1666023694709.3.html\nTimeout: 4 s.",
       "children" : [ {
         "name" : "shouldNotBuyInCreditWithSpaceInsteadOfName()",
-        "uid" : "e3ea0473c2df692e",
-        "parentUid" : "0f6e12f1d1f0ca1b16b97cde784756ed",
+        "uid" : "ce02b79796915154",
+        "parentUid" : "3508e63a81d6d3b38b5e8e38bcb03dbd",
         "status" : "failed",
         "time" : {
-          "start" : 1664990680318,
-          "stop" : 1664990687271,
-          "duration" : 6953
+          "start" : 1666023687700,
+          "stop" : 1666023695181,
+          "duration" : 7481
         },
         "flaky" : false,
         "newFailed" : false,
@@ -107,18 +86,18 @@
         "retriesStatusChange" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "0f6e12f1d1f0ca1b16b97cde784756ed"
+      "uid" : "3508e63a81d6d3b38b5e8e38bcb03dbd"
     }, {
-      "name" : "Element not found {.input__sub}\nExpected: exact text 'Неверный формат'\nScreenshot: file:/home/dimnat/Diplom_Anna_Katkova_2022/build/reports/tests/1664990693512.5.png\nPage source: file:/home/dimnat/Diplom_Anna_Katkova_2022/build/reports/tests/1664990693512.5.html\nTimeout: 4 s.\nCaused by: NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".input__sub\"}",
+      "name" : "Element not found {.input__sub}\nExpected: exact text 'Неверный формат'\nScreenshot: file:/home/dimnat/Diplom_Anna_Katkova_2022/build/reports/tests/1666023701995.4.png\nPage source: file:/home/dimnat/Diplom_Anna_Katkova_2022/build/reports/tests/1666023701995.4.html\nTimeout: 4 s.\nCaused by: NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".input__sub\"}",
       "children" : [ {
         "name" : "shouldNotBuyInCreditWithNameAndSurnameWithDash()",
-        "uid" : "8566ce0a643c1e7b",
-        "parentUid" : "ff441a30424fc2b0c87c0b66138756b8",
+        "uid" : "648408815e4c35e4",
+        "parentUid" : "3cbd8697f150fa67fedf4f6184acf622",
         "status" : "failed",
         "time" : {
-          "start" : 1664990687280,
-          "stop" : 1664990694173,
-          "duration" : 6893
+          "start" : 1666023695233,
+          "stop" : 1666023702827,
+          "duration" : 7594
         },
         "flaky" : false,
         "newFailed" : false,
@@ -128,18 +107,18 @@
         "retriesStatusChange" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "ff441a30424fc2b0c87c0b66138756b8"
+      "uid" : "3cbd8697f150fa67fedf4f6184acf622"
     }, {
-      "name" : "Element not found {.input__sub}\nExpected: exact text 'Значение поля может содержать только буквы и дефис'\nScreenshot: file:/home/dimnat/Diplom_Anna_Katkova_2022/build/reports/tests/1664990700535.6.png\nPage source: file:/home/dimnat/Diplom_Anna_Katkova_2022/build/reports/tests/1664990700535.6.html\nTimeout: 4 s.\nCaused by: NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".input__sub\"}",
+      "name" : "Element not found {.input__sub}\nExpected: exact text 'Значение поля может содержать только буквы и дефис'\nScreenshot: file:/home/dimnat/Diplom_Anna_Katkova_2022/build/reports/tests/1666023709911.5.png\nPage source: file:/home/dimnat/Diplom_Anna_Katkova_2022/build/reports/tests/1666023709911.5.html\nTimeout: 4 s.\nCaused by: NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".input__sub\"}",
       "children" : [ {
         "name" : "shouldNotBuyInCreditWithDigitsInName()",
-        "uid" : "abf429cb9fbc4188",
-        "parentUid" : "aeaaa040e4cbb80ae5749edf2bde3ea4",
+        "uid" : "6958c5c863a3692d",
+        "parentUid" : "91ca8c566d1743ad8191a94d33fbb9d1",
         "status" : "failed",
         "time" : {
-          "start" : 1664990694181,
-          "stop" : 1664990701164,
-          "duration" : 6983
+          "start" : 1666023702835,
+          "stop" : 1666023710873,
+          "duration" : 8038
         },
         "flaky" : false,
         "newFailed" : false,
@@ -149,18 +128,18 @@
         "retriesStatusChange" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "aeaaa040e4cbb80ae5749edf2bde3ea4"
+      "uid" : "91ca8c566d1743ad8191a94d33fbb9d1"
     }, {
-      "name" : "Element should have exact text 'Значение поля должно содержать 3 цифры' {.input__sub}\nElement: '<span class=\"input__sub\">Неверный формат</span>'\nScreenshot: file:/home/dimnat/Diplom_Anna_Katkova_2022/build/reports/tests/1664990711867.7.png\nPage source: file:/home/dimnat/Diplom_Anna_Katkova_2022/build/reports/tests/1664990711867.7.html\nTimeout: 4 s.",
+      "name" : "Element should have exact text 'Значение поля должно содержать 3 цифры' {.input__sub}\nElement: '<span class=\"input__sub\">Неверный формат</span>'\nScreenshot: file:/home/dimnat/Diplom_Anna_Katkova_2022/build/reports/tests/1666023723288.6.png\nPage source: file:/home/dimnat/Diplom_Anna_Katkova_2022/build/reports/tests/1666023723288.6.html\nTimeout: 4 s.",
       "children" : [ {
         "name" : "shouldNotBuyInCreditWithTwoDigitsInCvc()",
-        "uid" : "edaa454fc4ce9378",
-        "parentUid" : "4cfe25ccd05e659593601e709846d175",
+        "uid" : "ce1023e28b2ed08f",
+        "parentUid" : "b0790c972908d51028ffe7ecbf835c19",
         "status" : "failed",
         "time" : {
-          "start" : 1664990705636,
-          "stop" : 1664990712377,
-          "duration" : 6741
+          "start" : 1666023716628,
+          "stop" : 1666023723815,
+          "duration" : 7187
         },
         "flaky" : false,
         "newFailed" : false,
@@ -170,18 +149,18 @@
         "retriesStatusChange" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "4cfe25ccd05e659593601e709846d175"
+      "uid" : "b0790c972908d51028ffe7ecbf835c19"
     }, {
-      "name" : "Element should have exact text 'Поле обязательно для заполнения' {.input__sub}\nElement: '<span class=\"input__sub\">Неверный формат</span>'\nScreenshot: file:/home/dimnat/Diplom_Anna_Katkova_2022/build/reports/tests/1664990722852.8.png\nPage source: file:/home/dimnat/Diplom_Anna_Katkova_2022/build/reports/tests/1664990722852.8.html\nTimeout: 4 s.",
+      "name" : "Element should have exact text 'Поле обязательно для заполнения' {.input__sub}\nElement: '<span class=\"input__sub\">Неверный формат</span>'\nScreenshot: file:/home/dimnat/Diplom_Anna_Katkova_2022/build/reports/tests/1666023737207.7.png\nPage source: file:/home/dimnat/Diplom_Anna_Katkova_2022/build/reports/tests/1666023737207.7.html\nTimeout: 4 s.",
       "children" : [ {
         "name" : "shouldNotBuyInCreditWithEmptyYear()",
-        "uid" : "7ca47b95bd44348a",
-        "parentUid" : "c54da17c9936e26d18f57c44f0f165fe",
+        "uid" : "f4248ffc12947c90",
+        "parentUid" : "68ae97f9be82f0206a53ff24f510d6f4",
         "status" : "failed",
         "time" : {
-          "start" : 1664990716716,
-          "stop" : 1664990723372,
-          "duration" : 6656
+          "start" : 1666023729735,
+          "stop" : 1666023737783,
+          "duration" : 8048
         },
         "flaky" : false,
         "newFailed" : false,
@@ -191,18 +170,18 @@
         "retriesStatusChange" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "c54da17c9936e26d18f57c44f0f165fe"
+      "uid" : "68ae97f9be82f0206a53ff24f510d6f4"
     }, {
-      "name" : "Element should have exact text 'Поле обязательно для заполнения' {.input__sub}\nElement: '<span class=\"input__sub\">Неверный формат</span>'\nScreenshot: file:/home/dimnat/Diplom_Anna_Katkova_2022/build/reports/tests/1664990729451.9.png\nPage source: file:/home/dimnat/Diplom_Anna_Katkova_2022/build/reports/tests/1664990729451.9.html\nTimeout: 4 s.",
+      "name" : "Element should have exact text 'Поле обязательно для заполнения' {.input__sub}\nElement: '<span class=\"input__sub\">Неверный формат</span>'\nScreenshot: file:/home/dimnat/Diplom_Anna_Katkova_2022/build/reports/tests/1666023745080.8.png\nPage source: file:/home/dimnat/Diplom_Anna_Katkova_2022/build/reports/tests/1666023745080.8.html\nTimeout: 4 s.",
       "children" : [ {
         "name" : "shouldNotBuyInCreditWithEmptyMonth()",
-        "uid" : "58cf29578db3dc93",
-        "parentUid" : "aaf3c2afb5133a13ecd328c91497f1e3",
+        "uid" : "3b0f2ff8239320a",
+        "parentUid" : "0bebe787e8d4a5a1635a12a801271a3d",
         "status" : "failed",
         "time" : {
-          "start" : 1664990723380,
-          "stop" : 1664990729971,
-          "duration" : 6591
+          "start" : 1666023737803,
+          "stop" : 1666023745866,
+          "duration" : 8063
         },
         "flaky" : false,
         "newFailed" : false,
@@ -212,18 +191,18 @@
         "retriesStatusChange" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "aaf3c2afb5133a13ecd328c91497f1e3"
+      "uid" : "0bebe787e8d4a5a1635a12a801271a3d"
     }, {
-      "name" : "Element should have exact text 'Поле обязательно для заполнения' {.input__sub}\nElement: '<span class=\"input__sub\">Неверный формат</span>'\nScreenshot: file:/home/dimnat/Diplom_Anna_Katkova_2022/build/reports/tests/1664990738428.10.png\nPage source: file:/home/dimnat/Diplom_Anna_Katkova_2022/build/reports/tests/1664990738428.10.html\nTimeout: 4 s.",
+      "name" : "Element should have exact text 'Поле обязательно для заполнения' {.input__sub}\nElement: '<span class=\"input__sub\">Неверный формат</span>'\nScreenshot: file:/home/dimnat/Diplom_Anna_Katkova_2022/build/reports/tests/1666023755182.9.png\nPage source: file:/home/dimnat/Diplom_Anna_Katkova_2022/build/reports/tests/1666023755182.9.html\nTimeout: 4 s.",
       "children" : [ {
         "name" : "shouldNotBuyInCreditWithEmptyCardNumber()",
-        "uid" : "21f4671e4d98da82",
-        "parentUid" : "7552e677729533a7272f9cf176a6ffb1",
+        "uid" : "7ce7a5df95a017c1",
+        "parentUid" : "22db2450f0b7b788b0c2650e7aad212a",
         "status" : "failed",
         "time" : {
-          "start" : 1664990732238,
-          "stop" : 1664990738920,
-          "duration" : 6682
+          "start" : 1666023748803,
+          "stop" : 1666023755731,
+          "duration" : 6928
         },
         "flaky" : false,
         "newFailed" : false,
@@ -233,18 +212,18 @@
         "retriesStatusChange" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "7552e677729533a7272f9cf176a6ffb1"
+      "uid" : "22db2450f0b7b788b0c2650e7aad212a"
     }, {
-      "name" : "Element not found {.input__sub}\nExpected: exact text 'Неверно указан срок действия карты'\nScreenshot: file:/home/dimnat/Diplom_Anna_Katkova_2022/build/reports/tests/1664990745056.11.png\nPage source: file:/home/dimnat/Diplom_Anna_Katkova_2022/build/reports/tests/1664990745056.11.html\nTimeout: 4 s.\nCaused by: NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".input__sub\"}",
+      "name" : "Element not found {.input__sub}\nExpected: exact text 'Неверно указан срок действия карты'\nScreenshot: file:/home/dimnat/Diplom_Anna_Katkova_2022/build/reports/tests/1666023762004.10.png\nPage source: file:/home/dimnat/Diplom_Anna_Katkova_2022/build/reports/tests/1666023762004.10.html\nTimeout: 4 s.\nCaused by: NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".input__sub\"}",
       "children" : [ {
         "name" : "shouldNotBuyInCreditWithInvalidMonth()",
-        "uid" : "bffbca44e605a0ff",
-        "parentUid" : "8d98cb19e133065f09aa617d46935296",
+        "uid" : "8d9d6da7bcaa34de",
+        "parentUid" : "7c74176b43f5d7d6f32aa02a08cdf8bd",
         "status" : "failed",
         "time" : {
-          "start" : 1664990738928,
-          "stop" : 1664990745768,
-          "duration" : 6840
+          "start" : 1666023755742,
+          "stop" : 1666023762459,
+          "duration" : 6717
         },
         "flaky" : false,
         "newFailed" : false,
@@ -254,18 +233,18 @@
         "retriesStatusChange" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "8d98cb19e133065f09aa617d46935296"
+      "uid" : "7c74176b43f5d7d6f32aa02a08cdf8bd"
     }, {
-      "name" : "Element not found {notification_status_error}\nExpected: visible\nScreenshot: file:/home/dimnat/Diplom_Anna_Katkova_2022/build/reports/tests/1664990762919.12.png\nPage source: file:/home/dimnat/Diplom_Anna_Katkova_2022/build/reports/tests/1664990762919.12.html\nTimeout: 15 s.\nCaused by: NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"notification_status_error\"}",
+      "name" : "Element should be visible {.notification_status_error}\nElement: '<div class=\"notification notification_status_error notification_has-closer notification_stick-to_right notification_theme_alfa-on-white\" displayed:false></div>'\nActual value: visible:false\nScreenshot: file:/home/dimnat/Diplom_Anna_Katkova_2022/build/reports/tests/1666023779856.11.png\nPage source: file:/home/dimnat/Diplom_Anna_Katkova_2022/build/reports/tests/1666023779856.11.html\nTimeout: 15 s.",
       "children" : [ {
         "name" : "shouldNotBuyInCreditWithDeclinedCardNumber()",
-        "uid" : "c97b7d29ea31431f",
-        "parentUid" : "18918e2db3f389b7e20d6dfc96808918",
+        "uid" : "10e12d4dbb5b52bc",
+        "parentUid" : "8ea269ddf648b8dfcf4a90e77446bc72",
         "status" : "failed",
         "time" : {
-          "start" : 1664990745774,
-          "stop" : 1664990763798,
-          "duration" : 18024
+          "start" : 1666023762466,
+          "stop" : 1666023780288,
+          "duration" : 17822
         },
         "flaky" : false,
         "newFailed" : false,
@@ -275,18 +254,18 @@
         "retriesStatusChange" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "18918e2db3f389b7e20d6dfc96808918"
+      "uid" : "8ea269ddf648b8dfcf4a90e77446bc72"
     }, {
-      "name" : "Element not found {.input__sub}\nExpected: exact text 'Введите полное имя и фамилию'\nScreenshot: file:/home/dimnat/Diplom_Anna_Katkova_2022/build/reports/tests/1664990771031.13.png\nPage source: file:/home/dimnat/Diplom_Anna_Katkova_2022/build/reports/tests/1664990771031.13.html\nTimeout: 4 s.\nCaused by: NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".input__sub\"}",
+      "name" : "Element not found {.input__sub}\nExpected: exact text 'Введите полное имя и фамилию'\nScreenshot: file:/home/dimnat/Diplom_Anna_Katkova_2022/build/reports/tests/1666023786733.12.png\nPage source: file:/home/dimnat/Diplom_Anna_Katkova_2022/build/reports/tests/1666023786733.12.html\nTimeout: 4 s.\nCaused by: NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".input__sub\"}",
       "children" : [ {
         "name" : "shouldNotBuyInCreditWithOnlySurname()",
-        "uid" : "4ba214056e71e3ec",
-        "parentUid" : "b5cf7dd11e1647d33b1b328092cc6149",
+        "uid" : "b6bcd52f6624b1b",
+        "parentUid" : "4aeb5283634c53d80dc82c8c1d3b6607",
         "status" : "failed",
         "time" : {
-          "start" : 1664990763819,
-          "stop" : 1664990771814,
-          "duration" : 7995
+          "start" : 1666023780299,
+          "stop" : 1666023787489,
+          "duration" : 7190
         },
         "flaky" : false,
         "newFailed" : false,
@@ -296,18 +275,18 @@
         "retriesStatusChange" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "b5cf7dd11e1647d33b1b328092cc6149"
+      "uid" : "4aeb5283634c53d80dc82c8c1d3b6607"
     }, {
-      "name" : "Element not found {.input__sub}\nExpected: exact text 'Значение поля может содержать только буквы и дефис'\nScreenshot: file:/home/dimnat/Diplom_Anna_Katkova_2022/build/reports/tests/1664990785021.14.png\nPage source: file:/home/dimnat/Diplom_Anna_Katkova_2022/build/reports/tests/1664990785021.14.html\nTimeout: 4 s.\nCaused by: NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".input__sub\"}",
+      "name" : "Element not found {.input__sub}\nExpected: exact text 'Значение поля может содержать только буквы и дефис'\nScreenshot: file:/home/dimnat/Diplom_Anna_Katkova_2022/build/reports/tests/1666023799553.13.png\nPage source: file:/home/dimnat/Diplom_Anna_Katkova_2022/build/reports/tests/1666023799553.13.html\nTimeout: 4 s.\nCaused by: NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".input__sub\"}",
       "children" : [ {
         "name" : "shouldNotBuyInPaymentWithDigitsInName()",
-        "uid" : "d2f73c9d9b779179",
-        "parentUid" : "bb67a4d45fdd8d8447e68ae74aaee152",
+        "uid" : "19c8286cd20a629e",
+        "parentUid" : "f7a2b5de74321ff8cf4eb94ea92ec965",
         "status" : "failed",
         "time" : {
-          "start" : 1664990779067,
-          "stop" : 1664990785762,
-          "duration" : 6695
+          "start" : 1666023793239,
+          "stop" : 1666023799996,
+          "duration" : 6757
         },
         "flaky" : false,
         "newFailed" : false,
@@ -317,18 +296,18 @@
         "retriesStatusChange" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "bb67a4d45fdd8d8447e68ae74aaee152"
+      "uid" : "f7a2b5de74321ff8cf4eb94ea92ec965"
     }, {
-      "name" : "Element should have exact text 'Поле обязательно для заполнения' {.input__sub}\nElement: '<span class=\"input__sub\">Неверный формат</span>'\nScreenshot: file:/home/dimnat/Diplom_Anna_Katkova_2022/build/reports/tests/1664990793644.15.png\nPage source: file:/home/dimnat/Diplom_Anna_Katkova_2022/build/reports/tests/1664990793644.15.html\nTimeout: 4 s.",
+      "name" : "Element should have exact text 'Поле обязательно для заполнения' {.input__sub}\nElement: '<span class=\"input__sub\">Неверный формат</span>'\nScreenshot: file:/home/dimnat/Diplom_Anna_Katkova_2022/build/reports/tests/1666023806605.14.png\nPage source: file:/home/dimnat/Diplom_Anna_Katkova_2022/build/reports/tests/1666023806605.14.html\nTimeout: 4 s.",
       "children" : [ {
         "name" : "shouldNotBuyInPaymentWithEmptyMonth()",
-        "uid" : "6c8672d08cf10c23",
-        "parentUid" : "16f24ddbc9802c562ec7ec2dac1a8df9",
+        "uid" : "75e91eb2f2ae6eeb",
+        "parentUid" : "730c08ca55f0a4f3f16e1b6cb07220e9",
         "status" : "failed",
         "time" : {
-          "start" : 1664990785768,
-          "stop" : 1664990794153,
-          "duration" : 8385
+          "start" : 1666023800002,
+          "stop" : 1666023807175,
+          "duration" : 7173
         },
         "flaky" : false,
         "newFailed" : false,
@@ -338,18 +317,18 @@
         "retriesStatusChange" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "16f24ddbc9802c562ec7ec2dac1a8df9"
+      "uid" : "730c08ca55f0a4f3f16e1b6cb07220e9"
     }, {
-      "name" : "Element should have exact text 'Значение поля должно содержать 3 цифры' {.input__sub}\nElement: '<span class=\"input__sub\">Неверный формат</span>'\nScreenshot: file:/home/dimnat/Diplom_Anna_Katkova_2022/build/reports/tests/1664990800244.16.png\nPage source: file:/home/dimnat/Diplom_Anna_Katkova_2022/build/reports/tests/1664990800244.16.html\nTimeout: 4 s.",
+      "name" : "Element should have exact text 'Значение поля должно содержать 3 цифры' {.input__sub}\nElement: '<span class=\"input__sub\">Неверный формат</span>'\nScreenshot: file:/home/dimnat/Diplom_Anna_Katkova_2022/build/reports/tests/1666023813680.15.png\nPage source: file:/home/dimnat/Diplom_Anna_Katkova_2022/build/reports/tests/1666023813680.15.html\nTimeout: 4 s.",
       "children" : [ {
         "name" : "shouldNotBuyInPaymentWithOneDigitInCvc()",
-        "uid" : "d68721f3538f4a2c",
-        "parentUid" : "ec38d786b2978e2128cae56d2abc85b2",
+        "uid" : "d1ee379102f3e044",
+        "parentUid" : "87c5285e890aa893076aa2859ad3a162",
         "status" : "failed",
         "time" : {
-          "start" : 1664990794159,
-          "stop" : 1664990800741,
-          "duration" : 6582
+          "start" : 1666023807208,
+          "stop" : 1666023814193,
+          "duration" : 6985
         },
         "flaky" : false,
         "newFailed" : false,
@@ -359,18 +338,18 @@
         "retriesStatusChange" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "ec38d786b2978e2128cae56d2abc85b2"
+      "uid" : "87c5285e890aa893076aa2859ad3a162"
     }, {
-      "name" : "Texts size mismatch\nActual: [Неверный формат, Неверный формат, Неверный формат, Поле обязательно для заполнения, Неверный формат], List size: 5\nExpected: [Поле обязательно для заполнения], List size: 1\nCollection: .input__sub\nScreenshot: file:/home/dimnat/Diplom_Anna_Katkova_2022/build/reports/tests/1664990810748.17.png\nPage source: file:/home/dimnat/Diplom_Anna_Katkova_2022/build/reports/tests/1664990810748.17.html\nTimeout: 4 s.",
+      "name" : "Texts size mismatch\nActual: [Неверный формат, Неверный формат, Неверный формат, Поле обязательно для заполнения, Неверный формат], List size: 5\nExpected: [Поле обязательно для заполнения], List size: 1\nCollection: .input__sub\nScreenshot: file:/home/dimnat/Diplom_Anna_Katkova_2022/build/reports/tests/1666023824714.16.png\nPage source: file:/home/dimnat/Diplom_Anna_Katkova_2022/build/reports/tests/1666023824714.16.html\nTimeout: 4 s.",
       "children" : [ {
         "name" : "shouldNotBuyInPaymentWithAllEmptyFields()",
-        "uid" : "111e41ede856212a",
-        "parentUid" : "907dea423e5871e436f950404b2590c8",
+        "uid" : "57593ba1bbceca7c",
+        "parentUid" : "146b00101241918a8fea1a5f63dcf59d",
         "status" : "failed",
         "time" : {
-          "start" : 1664990804979,
-          "stop" : 1664990811306,
-          "duration" : 6327
+          "start" : 1666023818873,
+          "stop" : 1666023825446,
+          "duration" : 6573
         },
         "flaky" : false,
         "newFailed" : false,
@@ -380,18 +359,18 @@
         "retriesStatusChange" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "907dea423e5871e436f950404b2590c8"
+      "uid" : "146b00101241918a8fea1a5f63dcf59d"
     }, {
-      "name" : "Element not found {.input__sub}\nExpected: exact text 'Введите полное имя и фамилию'\nScreenshot: file:/home/dimnat/Diplom_Anna_Katkova_2022/build/reports/tests/1664990819463.18.png\nPage source: file:/home/dimnat/Diplom_Anna_Katkova_2022/build/reports/tests/1664990819463.18.html\nTimeout: 4 s.\nCaused by: NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".input__sub\"}",
+      "name" : "Element not found {.input__sub}\nExpected: exact text 'Введите полное имя и фамилию'\nScreenshot: file:/home/dimnat/Diplom_Anna_Katkova_2022/build/reports/tests/1666023838883.17.png\nPage source: file:/home/dimnat/Diplom_Anna_Katkova_2022/build/reports/tests/1666023838883.17.html\nTimeout: 4 s.\nCaused by: NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".input__sub\"}",
       "children" : [ {
         "name" : "shouldNotBuyInPaymentWithOnlySurname()",
-        "uid" : "5245db90cbe58106",
-        "parentUid" : "b7b30be9219a23b4473ecfd4badc28a3",
+        "uid" : "b44c8fbcb316e01b",
+        "parentUid" : "7bc7cfb45b06278ecb74d20bad933d9d",
         "status" : "failed",
         "time" : {
-          "start" : 1664990813519,
-          "stop" : 1664990820098,
-          "duration" : 6579
+          "start" : 1666023830171,
+          "stop" : 1666023839400,
+          "duration" : 9229
         },
         "flaky" : false,
         "newFailed" : false,
@@ -401,18 +380,18 @@
         "retriesStatusChange" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "b7b30be9219a23b4473ecfd4badc28a3"
+      "uid" : "7bc7cfb45b06278ecb74d20bad933d9d"
     }, {
-      "name" : "Element not found {.input__sub}\nExpected: exact text 'Неверный формат'\nScreenshot: file:/home/dimnat/Diplom_Anna_Katkova_2022/build/reports/tests/1664990828139.19.png\nPage source: file:/home/dimnat/Diplom_Anna_Katkova_2022/build/reports/tests/1664990828139.19.html\nTimeout: 4 s.\nCaused by: NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".input__sub\"}",
+      "name" : "Element not found {.input__sub}\nExpected: exact text 'Неверный формат'\nScreenshot: file:/home/dimnat/Diplom_Anna_Katkova_2022/build/reports/tests/1666023848141.18.png\nPage source: file:/home/dimnat/Diplom_Anna_Katkova_2022/build/reports/tests/1666023848141.18.html\nTimeout: 4 s.\nCaused by: NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".input__sub\"}",
       "children" : [ {
         "name" : "shouldNotBuyInPaymentWithNameAndSurnameWithDash()",
-        "uid" : "2360d94db174c610",
-        "parentUid" : "e574f9a42a2dc24c12dcefa24209abe3",
+        "uid" : "c4e0228b5e8e8166",
+        "parentUid" : "bcc01cbe37a2ac6dbe6b615b72045afb",
         "status" : "failed",
         "time" : {
-          "start" : 1664990822206,
-          "stop" : 1664990828765,
-          "duration" : 6559
+          "start" : 1666023841878,
+          "stop" : 1666023849003,
+          "duration" : 7125
         },
         "flaky" : false,
         "newFailed" : false,
@@ -422,18 +401,18 @@
         "retriesStatusChange" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "e574f9a42a2dc24c12dcefa24209abe3"
+      "uid" : "bcc01cbe37a2ac6dbe6b615b72045afb"
     }, {
-      "name" : "Element not found {notification_status_error}\nExpected: visible\nScreenshot: file:/home/dimnat/Diplom_Anna_Katkova_2022/build/reports/tests/1664990852106.20.png\nPage source: file:/home/dimnat/Diplom_Anna_Katkova_2022/build/reports/tests/1664990852106.20.html\nTimeout: 15 s.\nCaused by: NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"notification_status_error\"}",
+      "name" : "Element not found {notification_status_error}\nExpected: visible\nScreenshot: file:/home/dimnat/Diplom_Anna_Katkova_2022/build/reports/tests/1666023871197.19.png\nPage source: file:/home/dimnat/Diplom_Anna_Katkova_2022/build/reports/tests/1666023871197.19.html\nTimeout: 15 s.\nCaused by: NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"notification_status_error\"}",
       "children" : [ {
         "name" : "shouldNotBuyInPaymentWithDeclinedCardNumber()",
-        "uid" : "2590dc82eaa62c0f",
-        "parentUid" : "3ae1fb9427292b6e066a88dd86c9037f",
+        "uid" : "5b31c349ab784e9",
+        "parentUid" : "368535659d917b1eb99d52801749be9b",
         "status" : "failed",
         "time" : {
-          "start" : 1664990834862,
-          "stop" : 1664990852622,
-          "duration" : 17760
+          "start" : 1666023853793,
+          "stop" : 1666023871762,
+          "duration" : 17969
         },
         "flaky" : false,
         "newFailed" : false,
@@ -443,18 +422,18 @@
         "retriesStatusChange" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "3ae1fb9427292b6e066a88dd86c9037f"
+      "uid" : "368535659d917b1eb99d52801749be9b"
     }, {
-      "name" : "Element should have exact text 'Значение поля должно содержать 3 цифры' {.input__sub}\nElement: '<span class=\"input__sub\">Неверный формат</span>'\nScreenshot: file:/home/dimnat/Diplom_Anna_Katkova_2022/build/reports/tests/1664990858775.21.png\nPage source: file:/home/dimnat/Diplom_Anna_Katkova_2022/build/reports/tests/1664990858775.21.html\nTimeout: 4 s.",
+      "name" : "Element should have exact text 'Значение поля должно содержать 3 цифры' {.input__sub}\nElement: '<span class=\"input__sub\">Неверный формат</span>'\nScreenshot: file:/home/dimnat/Diplom_Anna_Katkova_2022/build/reports/tests/1666023878416.20.png\nPage source: file:/home/dimnat/Diplom_Anna_Katkova_2022/build/reports/tests/1666023878416.20.html\nTimeout: 4 s.",
       "children" : [ {
         "name" : "shouldNotBuyInPaymentWithTwoDigitsInCvc()",
-        "uid" : "e8b30e17a5acd0da",
-        "parentUid" : "4ae16cf8a71b6c7016944aa5b144b506",
+        "uid" : "f1b2a60d798a571f",
+        "parentUid" : "97fe6da32b701cb79cd84bd55d4375d4",
         "status" : "failed",
         "time" : {
-          "start" : 1664990852628,
-          "stop" : 1664990859292,
-          "duration" : 6664
+          "start" : 1666023871768,
+          "stop" : 1666023878998,
+          "duration" : 7230
         },
         "flaky" : false,
         "newFailed" : false,
@@ -464,18 +443,18 @@
         "retriesStatusChange" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "4ae16cf8a71b6c7016944aa5b144b506"
+      "uid" : "97fe6da32b701cb79cd84bd55d4375d4"
     }, {
-      "name" : "Element not found {.input__sub}\nExpected: exact text 'Неверно указан срок действия карты'\nScreenshot: file:/home/dimnat/Diplom_Anna_Katkova_2022/build/reports/tests/1664990865279.22.png\nPage source: file:/home/dimnat/Diplom_Anna_Katkova_2022/build/reports/tests/1664990865279.22.html\nTimeout: 4 s.\nCaused by: NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".input__sub\"}",
+      "name" : "Element not found {.input__sub}\nExpected: exact text 'Неверно указан срок действия карты'\nScreenshot: file:/home/dimnat/Diplom_Anna_Katkova_2022/build/reports/tests/1666023885396.21.png\nPage source: file:/home/dimnat/Diplom_Anna_Katkova_2022/build/reports/tests/1666023885396.21.html\nTimeout: 4 s.\nCaused by: NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".input__sub\"}",
       "children" : [ {
         "name" : "shouldNotBuyInPaymentWithInvalidMonth()",
-        "uid" : "10e01d6e275fcbd2",
-        "parentUid" : "4bde0424a441d36a235c3be0c22c9b94",
+        "uid" : "c70791ba6cfebb62",
+        "parentUid" : "ac968a0902efe8053cb965341acea58d",
         "status" : "failed",
         "time" : {
-          "start" : 1664990859297,
-          "stop" : 1664990865822,
-          "duration" : 6525
+          "start" : 1666023879006,
+          "stop" : 1666023886036,
+          "duration" : 7030
         },
         "flaky" : false,
         "newFailed" : false,
@@ -485,18 +464,18 @@
         "retriesStatusChange" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "4bde0424a441d36a235c3be0c22c9b94"
+      "uid" : "ac968a0902efe8053cb965341acea58d"
     }, {
-      "name" : "Element not found {notification_status_error}\nExpected: visible\nScreenshot: file:/home/dimnat/Diplom_Anna_Katkova_2022/build/reports/tests/1664990882981.23.png\nPage source: file:/home/dimnat/Diplom_Anna_Katkova_2022/build/reports/tests/1664990882981.23.html\nTimeout: 15 s.\nCaused by: NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"notification_status_error\"}",
+      "name" : "Element not found {notification_status_error}\nExpected: visible\nScreenshot: file:/home/dimnat/Diplom_Anna_Katkova_2022/build/reports/tests/1666023903628.22.png\nPage source: file:/home/dimnat/Diplom_Anna_Katkova_2022/build/reports/tests/1666023903628.22.html\nTimeout: 15 s.\nCaused by: NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"notification_status_error\"}",
       "children" : [ {
         "name" : "shouldNotBuyInPaymentWithInvalidCardNumber()",
-        "uid" : "fe0c52bd14e189d",
-        "parentUid" : "564193a320ef6425d1d753cb2c90d44c",
+        "uid" : "7d42e33e445f1f5c",
+        "parentUid" : "4b4516bb046c385bd5fc7b9e2e612e9a",
         "status" : "failed",
         "time" : {
-          "start" : 1664990865827,
-          "stop" : 1664990883505,
-          "duration" : 17678
+          "start" : 1666023886044,
+          "stop" : 1666023904080,
+          "duration" : 18036
         },
         "flaky" : false,
         "newFailed" : false,
@@ -506,18 +485,18 @@
         "retriesStatusChange" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "564193a320ef6425d1d753cb2c90d44c"
+      "uid" : "4b4516bb046c385bd5fc7b9e2e612e9a"
     }, {
-      "name" : "Element should have exact text 'Значение поля может содержать только буквы и дефис' {.input__sub}\nElement: '<span class=\"input__sub\">Поле обязательно для заполнения</span>'\nScreenshot: file:/home/dimnat/Diplom_Anna_Katkova_2022/build/reports/tests/1664990889710.24.png\nPage source: file:/home/dimnat/Diplom_Anna_Katkova_2022/build/reports/tests/1664990889710.24.html\nTimeout: 4 s.",
+      "name" : "Element should have exact text 'Значение поля может содержать только буквы и дефис' {.input__sub}\nElement: '<span class=\"input__sub\">Поле обязательно для заполнения</span>'\nScreenshot: file:/home/dimnat/Diplom_Anna_Katkova_2022/build/reports/tests/1666023910792.23.png\nPage source: file:/home/dimnat/Diplom_Anna_Katkova_2022/build/reports/tests/1666023910792.23.html\nTimeout: 4 s.",
       "children" : [ {
         "name" : "shouldNotBuyInPaymentWithSpaceInsteadOfName()",
-        "uid" : "ead7f8b8e1d2fd3c",
-        "parentUid" : "4b0682044812285ef0897d435bc47f92",
+        "uid" : "30ee2aaeda7c3f97",
+        "parentUid" : "5cbb7daece9cd245c8ea069c677c2c8b",
         "status" : "failed",
         "time" : {
-          "start" : 1664990883511,
-          "stop" : 1664990890222,
-          "duration" : 6711
+          "start" : 1666023904087,
+          "stop" : 1666023911374,
+          "duration" : 7287
         },
         "flaky" : false,
         "newFailed" : false,
@@ -527,18 +506,18 @@
         "retriesStatusChange" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "4b0682044812285ef0897d435bc47f92"
+      "uid" : "5cbb7daece9cd245c8ea069c677c2c8b"
     }, {
-      "name" : "Element should have exact text 'Поле обязательно для заполнения' {.input__sub}\nElement: '<span class=\"input__sub\">Неверный формат</span>'\nScreenshot: file:/home/dimnat/Diplom_Anna_Katkova_2022/build/reports/tests/1664990896218.25.png\nPage source: file:/home/dimnat/Diplom_Anna_Katkova_2022/build/reports/tests/1664990896218.25.html\nTimeout: 4 s.",
+      "name" : "Element should have exact text 'Поле обязательно для заполнения' {.input__sub}\nElement: '<span class=\"input__sub\">Неверный формат</span>'\nScreenshot: file:/home/dimnat/Diplom_Anna_Katkova_2022/build/reports/tests/1666023917846.24.png\nPage source: file:/home/dimnat/Diplom_Anna_Katkova_2022/build/reports/tests/1666023917846.24.html\nTimeout: 4 s.",
       "children" : [ {
         "name" : "shouldNotBuyInPaymentWithEmptyCardNumber()",
-        "uid" : "744e99a077a59439",
-        "parentUid" : "d851b0f3b3c70699503830de78856b82",
+        "uid" : "a16f981040b254de",
+        "parentUid" : "1731d2d8ad576a82d6b4048bd362ab84",
         "status" : "failed",
         "time" : {
-          "start" : 1664990890228,
-          "stop" : 1664990896709,
-          "duration" : 6481
+          "start" : 1666023911383,
+          "stop" : 1666023918410,
+          "duration" : 7027
         },
         "flaky" : false,
         "newFailed" : false,
@@ -548,18 +527,18 @@
         "retriesStatusChange" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "d851b0f3b3c70699503830de78856b82"
+      "uid" : "1731d2d8ad576a82d6b4048bd362ab84"
     }, {
-      "name" : "Element should have exact text 'Поле обязательно для заполнения' {.input__sub}\nElement: '<span class=\"input__sub\">Неверный формат</span>'\nScreenshot: file:/home/dimnat/Diplom_Anna_Katkova_2022/build/reports/tests/1664990904769.26.png\nPage source: file:/home/dimnat/Diplom_Anna_Katkova_2022/build/reports/tests/1664990904769.26.html\nTimeout: 4 s.",
+      "name" : "Element should have exact text 'Поле обязательно для заполнения' {.input__sub}\nElement: '<span class=\"input__sub\">Неверный формат</span>'\nScreenshot: file:/home/dimnat/Diplom_Anna_Katkova_2022/build/reports/tests/1666023926888.25.png\nPage source: file:/home/dimnat/Diplom_Anna_Katkova_2022/build/reports/tests/1666023926888.25.html\nTimeout: 4 s.",
       "children" : [ {
         "name" : "shouldNotBuyInPaymentWithEmptyYear()",
-        "uid" : "92606a616053f1b3",
-        "parentUid" : "c2416e1bc0e7220136977d92b388498e",
+        "uid" : "96cf2716d00ede19",
+        "parentUid" : "9183b4eea95f52d2d37df49440c97d65",
         "status" : "failed",
         "time" : {
-          "start" : 1664990898654,
-          "stop" : 1664990905285,
-          "duration" : 6631
+          "start" : 1666023920646,
+          "stop" : 1666023927352,
+          "duration" : 6706
         },
         "flaky" : false,
         "newFailed" : false,
@@ -569,18 +548,18 @@
         "retriesStatusChange" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "c2416e1bc0e7220136977d92b388498e"
+      "uid" : "9183b4eea95f52d2d37df49440c97d65"
     }, {
-      "name" : "Element should have exact text 'Истёк срок действия карты' {.input__sub}\nElement: '<span class=\"input__sub\">Неверно указан срок действия карты</span>'\nScreenshot: file:/home/dimnat/Diplom_Anna_Katkova_2022/build/reports/tests/1664990911304.27.png\nPage source: file:/home/dimnat/Diplom_Anna_Katkova_2022/build/reports/tests/1664990911304.27.html\nTimeout: 4 s.",
+      "name" : "Element should have exact text 'Истёк срок действия карты' {.input__sub}\nElement: '<span class=\"input__sub\">Неверно указан срок действия карты</span>'\nScreenshot: file:/home/dimnat/Diplom_Anna_Katkova_2022/build/reports/tests/1666023933765.26.png\nPage source: file:/home/dimnat/Diplom_Anna_Katkova_2022/build/reports/tests/1666023933765.26.html\nTimeout: 4 s.",
       "children" : [ {
         "name" : "shouldNotBuyInPaymentWithExpiredMonth()",
-        "uid" : "a562645985128e99",
-        "parentUid" : "4c6918dc668a70ab72a2254abd52b954",
+        "uid" : "e54d37aae3c62a35",
+        "parentUid" : "d0b4624dff817f68aa52beef8fb255cd",
         "status" : "failed",
         "time" : {
-          "start" : 1664990905291,
-          "stop" : 1664990911822,
-          "duration" : 6531
+          "start" : 1666023927359,
+          "stop" : 1666023934154,
+          "duration" : 6795
         },
         "flaky" : false,
         "newFailed" : false,
@@ -590,84 +569,8 @@
         "retriesStatusChange" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "4c6918dc668a70ab72a2254abd52b954"
+      "uid" : "d0b4624dff817f68aa52beef8fb255cd"
     } ],
     "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
-  }, {
-    "name" : "Test defects",
-    "children" : [ {
-      "name" : "No suitable driver found for ",
-      "children" : [ {
-        "name" : "shouldBuyInCredit()",
-        "uid" : "486dd8394b097016",
-        "parentUid" : "9056762be6737affc799e0c814f19032",
-        "status" : "broken",
-        "time" : {
-          "start" : 1664990657493,
-          "stop" : 1664990666826,
-          "duration" : 9333
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "shouldBuyInCreditWithNameInRussianLetters()",
-        "uid" : "dd12d01b7c5443dc",
-        "parentUid" : "9056762be6737affc799e0c814f19032",
-        "status" : "broken",
-        "time" : {
-          "start" : 1664990771828,
-          "stop" : 1664990779042,
-          "duration" : 7214
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "shouldBuyInPayment()",
-        "uid" : "a60070fee60142d3",
-        "parentUid" : "9056762be6737affc799e0c814f19032",
-        "status" : "broken",
-        "time" : {
-          "start" : 1664990828771,
-          "stop" : 1664990834856,
-          "duration" : 6085
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "shouldBuyInPaymentWithNameInRussianLetters()",
-        "uid" : "df9b9c566a1b35c1",
-        "parentUid" : "9056762be6737affc799e0c814f19032",
-        "status" : "broken",
-        "time" : {
-          "start" : 1664990911827,
-          "stop" : 1664990917585,
-          "duration" : 5758
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "9056762be6737affc799e0c814f19032"
-    } ],
-    "uid" : "bdbf199525818fae7a8651db9eafe741"
   } ]
 }

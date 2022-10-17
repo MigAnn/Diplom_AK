@@ -46,7 +46,7 @@ public class Credit {
     }
 
     public void checkDeclineNotification() {
-        $("notification_status_error").shouldBe(visible, Duration.ofMillis(15000));
+        $(".notification_status_error").shouldBe(visible, Duration.ofMillis(15000));
     }
 
     public void checkInvalidFormat() {

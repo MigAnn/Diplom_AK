@@ -36,8 +36,8 @@ public class PaymentTest {
     void shouldBuyInPayment() throws SQLException {
         CardInfo card = new CardInfo(getApprovedNumber(), getCurrentMonth(), getNextYear(), getValidName(), getValidCvc());
         val firstPage = new FirstPage();
-        firstPage.buy();
-        val payment = new Payment();
+        val payment = firstPage.buy();
+
         payment.fulfillData(card);
         payment.checkSuccessNotification();
         assertEquals("APPROVED", DbUtils.getPaymentStatus());
@@ -48,8 +48,8 @@ public class PaymentTest {
     void shouldBuyInPaymentWithNameInRussianLetters() throws SQLException {
         CardInfo card = new CardInfo(getApprovedNumber(), getCurrentMonth(), getNextYear(), getInValidName(), getValidCvc());
         val firstPage = new FirstPage();
-        firstPage.buy();
-        val payment = new Payment();
+        val payment = firstPage.buy();
+
         payment.fulfillData(card);
         payment.checkSuccessNotification();
         assertEquals("APPROVED", DbUtils.getPaymentStatus());
@@ -60,8 +60,8 @@ public class PaymentTest {
     void shouldNotBuyInPaymentWithDeclinedCardNumber() throws SQLException {
         CardInfo card = new CardInfo(getDeclinedNumber(), getCurrentMonth(), getNextYear(), getValidName(), getValidCvc());
         val firstPage = new FirstPage();
-        firstPage.buy();
-        val payment = new Payment();
+        val payment = firstPage.buy();
+
         payment.fulfillData(card);
         payment.checkDeclineNotification();
         assertEquals("DECLINED", DbUtils.getPaymentStatus());
@@ -74,8 +74,8 @@ public class PaymentTest {
     void shouldNotBuyInPaymentWithInvalidCardNumber() throws SQLException {
         CardInfo card = new CardInfo(getInvalidCardNumber(), getCurrentMonth(), getNextYear(), getValidName(), getValidCvc());
         val firstPage = new FirstPage();
-        firstPage.buy();
-        val payment = new Payment();
+        val payment = firstPage.buy();
+
         payment.fulfillData(card);
         payment.checkDeclineNotification();
 
@@ -86,8 +86,8 @@ public class PaymentTest {
     void shouldNotBuyInPaymentWithShortCardNumber() {
         CardInfo card = new CardInfo(getShortCardNumber(), getCurrentMonth(), getNextYear(), getValidName(), getValidCvc());
         val firstPage = new FirstPage();
-        firstPage.buy();
-        val payment = new Payment();
+        val payment = firstPage.buy();
+
         payment.fulfillData(card);
         payment.checkInvalidFormat();
     }
@@ -98,8 +98,8 @@ public class PaymentTest {
     void shouldNotBuyInPaymentWithEmptyCardNumber() {
         CardInfo card = new CardInfo(null, getCurrentMonth(), getNextYear(), getValidName(), getValidCvc());
         val firstPage = new FirstPage();
-        firstPage.buy();
-        val payment = new Payment();
+        val payment = firstPage.buy();
+
         payment.fulfillData(card);
         payment.checkRequiredField();
     }
@@ -112,8 +112,8 @@ public class PaymentTest {
     void shouldNotBuyInPaymentWithInvalidMonth() {
         CardInfo card = new CardInfo(getApprovedNumber(), "00", getNextYear(), getValidName(), getValidCvc());
         val firstPage = new FirstPage();
-        firstPage.buy();
-        val payment = new Payment();
+        val payment = firstPage.buy();
+
         payment.fulfillData(card);
         payment.checkInvalidDate();
     }
@@ -123,8 +123,8 @@ public class PaymentTest {
     void shouldNotBuyInPaymentWithNonExistingMonth() {
         CardInfo card = new CardInfo(getApprovedNumber(), "13", getNextYear(), getValidName(), getValidCvc());
         val firstPage = new FirstPage();
-        firstPage.buy();
-        val payment = new Payment();
+        val payment = firstPage.buy();
+
         payment.fulfillData(card);
         payment.checkInvalidDate();
 
@@ -136,8 +136,8 @@ public class PaymentTest {
     void shouldNotBuyInPaymentWithExpiredMonth() {
         CardInfo card = new CardInfo(getApprovedNumber(), getLastMonth(), getCurrentYear(), getValidName(), getValidCvc());
         val firstPage = new FirstPage();
-        firstPage.buy();
-        val payment = new Payment();
+        val payment = firstPage.buy();
+
         payment.fulfillData(card);
         payment.checkExpiredDate();
     }
@@ -148,8 +148,8 @@ public class PaymentTest {
     void shouldNotBuyInPaymentWithEmptyMonth() {
         CardInfo card = new CardInfo(getApprovedNumber(), null, getNextYear(), getValidName(), getValidCvc());
         val firstPage = new FirstPage();
-        firstPage.buy();
-        val payment = new Payment();
+        val payment = firstPage.buy();
+
         payment.fulfillData(card);
         payment.checkRequiredField();
     }
@@ -161,8 +161,8 @@ public class PaymentTest {
     void shouldNotBuyInPaymentWithExpiredYear() {
         CardInfo card = new CardInfo(getApprovedNumber(), getCurrentMonth(), getLastYear(), getValidName(), getValidCvc());
         val firstPage = new FirstPage();
-        firstPage.buy();
-        val payment = new Payment();
+        val payment = firstPage.buy();
+
         payment.fulfillData(card);
         payment.checkExpiredDate();
     }
@@ -173,8 +173,8 @@ public class PaymentTest {
     void shouldNotBuyInPaymentWithEmptyYear() {
         CardInfo card = new CardInfo(getApprovedNumber(), getCurrentMonth(), null, getValidName(), getValidCvc());
         val firstPage = new FirstPage();
-        firstPage.buy();
-        val payment = new Payment();
+        val payment = firstPage.buy();
+
         payment.fulfillData(card);
         payment.checkRequiredField();
     }
@@ -187,8 +187,8 @@ public class PaymentTest {
     void shouldNotBuyInPaymentWithOnlySurname() {
         CardInfo card = new CardInfo(getApprovedNumber(), getCurrentMonth(), getNextYear(), getOnlySurname(), getValidCvc());
         val firstPage = new FirstPage();
-        firstPage.buy();
-        val payment = new Payment();
+        val payment = firstPage.buy();
+
         payment.fulfillData(card);
         payment.checkInvalidName();
     }
@@ -198,8 +198,8 @@ public class PaymentTest {
     void shouldNotBuyInPaymentWithNameAndSurnameWithDash() {
         CardInfo card = new CardInfo(getApprovedNumber(), getCurrentMonth(), getNextYear(), "Petro-Stefan", getValidCvc());
         val firstPage = new FirstPage();
-        firstPage.buy();
-        val payment = new Payment();
+        val payment = firstPage.buy();
+
         payment.fulfillData(card);
         payment.checkInvalidFormat();
     }
@@ -210,8 +210,8 @@ public class PaymentTest {
     void shouldNotBuyInPaymentWithDigitsInName() {
         CardInfo card = new CardInfo(getApprovedNumber(), getCurrentMonth(), getNextYear(), getNameWithNumbers(), getValidCvc());
         val firstPage = new FirstPage();
-        firstPage.buy();
-        val payment = new Payment();
+        val payment = firstPage.buy();
+
         payment.fulfillData(card);
         payment.checkInvalidDataName();
     }
@@ -222,8 +222,8 @@ public class PaymentTest {
     void shouldNotBuyInPaymentWithEmptyName() {
         CardInfo card = new CardInfo(getApprovedNumber(), getCurrentMonth(), getNextYear(), null, getValidCvc());
         val firstPage = new FirstPage();
-        firstPage.buy();
-        val payment = new Payment();
+        val payment = firstPage.buy();
+
         payment.fulfillData(card);
         payment.checkRequiredField();
     }
@@ -234,8 +234,8 @@ public class PaymentTest {
     void shouldNotBuyInPaymentWithSpaceInsteadOfName() {
         CardInfo card = new CardInfo(getApprovedNumber(), getCurrentMonth(), getNextYear(), " ", getValidCvc());
         val firstPage = new FirstPage();
-        firstPage.buy();
-        val payment = new Payment();
+        val payment = firstPage.buy();
+
         payment.fulfillData(card);
         payment.checkInvalidDataName();
     }
@@ -248,8 +248,8 @@ public class PaymentTest {
     void shouldNotBuyInPaymentWithOneDigitInCvc() {
         CardInfo card = new CardInfo(getApprovedNumber(), getCurrentMonth(), getNextYear(), getValidName(), getCvcWithOneDigit());
         val firstPage = new FirstPage();
-        firstPage.buy();
-        val payment = new Payment();
+        val payment = firstPage.buy();
+
         payment.fulfillData(card);
         payment.checkInvalidCvc();
     }
@@ -260,8 +260,8 @@ public class PaymentTest {
     void shouldNotBuyInPaymentWithTwoDigitsInCvc() {
         CardInfo card = new CardInfo(getApprovedNumber(), getCurrentMonth(), getNextYear(), getValidName(), getCvcWithTwoDigits());
         val firstPage = new FirstPage();
-        firstPage.buy();
-        val payment = new Payment();
+        val payment = firstPage.buy();
+
         payment.fulfillData(card);
         payment.checkInvalidCvc(); //TODO Изменить надпись под полем CVC "Значение поля должно содержать 3 цифры"
     }
@@ -272,8 +272,8 @@ public class PaymentTest {
     void shouldNotBuyInPaymentWithEmptyCvc() {
         CardInfo card = new CardInfo(getApprovedNumber(), getCurrentMonth(), getNextYear(), getValidName(), null);
         val firstPage = new FirstPage();
-        firstPage.buy();
-        val payment = new Payment();
+        val payment = firstPage.buy();
+
         payment.fulfillData(card);
         payment.checkRequiredField();
     }
@@ -284,8 +284,8 @@ public class PaymentTest {
     void shouldNotBuyInPaymentWithAllEmptyFields() {
         CardInfo card = new CardInfo(null, null, null, null, null);
         val firstPage = new FirstPage();
-        firstPage.buy();
-        val payment = new Payment();
+        val payment = firstPage.buy();
+
         payment.fulfillData(card);
         payment.checkAllFieldsAreRequired(); //TODO Изменить надписи под полями на "Поле обязательно для заполнения"
     }
